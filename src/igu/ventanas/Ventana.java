@@ -4,23 +4,23 @@ import java.awt.Dimension;
 import java.awt.Point;
 import java.awt.Toolkit;
 import java.awt.geom.Point2D;
-//import java.util.ArrayList;
+import java.util.ArrayList;
 
 import javax.swing.JFrame;
 
-//import igu.laminas.Lamina;
+import igu.laminas.Lamina;
 
 public class Ventana extends JFrame{
-//	private ArrayList<Lamina> laminas;
+	private ArrayList<Lamina> laminas;
 	
 	public Ventana(double cX, double cY) {
 		this.setLocation((int)cX, (int)cY);
-//		laminas=new ArrayList<Lamina>();
+		laminas=new ArrayList<Lamina>();
 	}
 	
 	public Ventana(Point2D.Double pc) {
 		this.setLocation((int)pc.getX(),(int)pc.getY());
-//		laminas=new ArrayList<Lamina>();
+		laminas=new ArrayList<Lamina>();
 	}
 	
 	public Ventana(double cX, double cY, int ancho, int alto) {
@@ -59,18 +59,18 @@ public class Ventana extends JFrame{
 	
 	public Ventana(int ancho, int alto) {
 		this.setSize(ancho,alto);
-//		laminas=new ArrayList<Lamina>();
+		laminas=new ArrayList<Lamina>();
 	}
 	
 	public Ventana(String titulo, int ancho, int alto) {
 		this.setTitle(titulo);
 		this.setSize(new Dimension(ancho, alto));
-//		laminas=new ArrayList<Lamina>();
+		laminas=new ArrayList<Lamina>();
 	}
 	
 	public Ventana() {
 		this.centrar();
-//		laminas=new ArrayList<Lamina>();
+		laminas=new ArrayList<Lamina>();
 	}
 	
 	public Ventana(String titulo) {
@@ -79,9 +79,9 @@ public class Ventana extends JFrame{
 	}
 	
 	
-//	public void agregarLamina(Lamina lamina) {
-//		laminas.add(lamina);
-//	}
+	public void agregarLamina(Lamina lamina) {
+		laminas.add(lamina);
+	}
 	
 	public void visibilizar() {
 		this.setVisible(true);
