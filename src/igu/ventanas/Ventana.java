@@ -4,7 +4,7 @@ import java.awt.Dimension;
 import java.awt.Point;
 import java.awt.Toolkit;
 import java.awt.geom.Point2D;
-import java.util.ArrayList;
+//import java.util.ArrayList;
 
 import javax.swing.JFrame;
 
@@ -77,6 +77,7 @@ public class Ventana extends JFrame{
 		this();
 		this.setTitle(titulo);
 	}
+	
 	
 //	public void agregarLamina(Lamina lamina) {
 //		laminas.add(lamina);
